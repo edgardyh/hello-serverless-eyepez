@@ -1,4 +1,4 @@
-service: hello-serverless
+service: hello-serverless-eyepez
 
 provider:
   name: aws
