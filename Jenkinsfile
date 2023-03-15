@@ -6,7 +6,7 @@ pipeline{
                 sh 'npm install'
             }
         }
-        stage('buid'{
+        stage('deploy') {
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs') {
                     withAWS(credentials: 'aws-credemtials') {
