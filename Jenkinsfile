@@ -10,7 +10,7 @@ pipeline{
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs') {
                     withAWS(credentials: 'aws-credentials') {
-                        sh 'servless deploy'
+                        sh 'serverless deploy'
                     }
                 }
             }
