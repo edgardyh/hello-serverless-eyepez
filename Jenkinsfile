@@ -9,11 +9,11 @@ pipeline{
         stage('deploy') {
             steps{
                 nodejs(nodeJSInstallationName: 'nodejs') {
-                    withAWS(credentials: 'aws-credemtials') {
+                    withAWS(credentials: 'aws-credentials') {
                         sh 'servless deploy'
                     }
                 }
             }
-        })
+        }
     }
 }
